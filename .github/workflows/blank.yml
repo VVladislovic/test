@@ -9,7 +9,7 @@ on:
 jobs:
   steps:
     -name: prvi step
-    -run: cat README "Latest issue closed by ${{ github.user }}"
+    -run: echo README >  "Latest issue closed by ${{ github.user }}"
 
 
 
