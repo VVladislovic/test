@@ -3,15 +3,13 @@
 name: CI
 
 on:
-  label:
-    types:
-      - created
-  iss
+  issue:
+    -closed
   
 jobs:
   steps:
     -name: prvi step
-    -run: echo "Trigger ${{ github.event_name }}, date - `date`"
+    -run: cat README "Latest issue closed by ${{ github.user }}"
 
 
 
